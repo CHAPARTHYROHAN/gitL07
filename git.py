@@ -21,8 +21,8 @@ PF = st.number_input('Enter Power Factor (PF):', min_value=0.0, max_value=1.0, s
 if V > 0 and I > 0 and PF >= 0 and PF <= 1:
     P, Q, S = Elec_Power(V, I, PF)
     
-    st.write(f'Active Power (P): {P:.2f} Watts')
-    st.write(f'Reactive Power (Q): {Q:.2f} VARs')
-    st.write(f'Apparent Power (S): {S:.2f} VA')
+    st.write(f'Active Power (P): {P:.2f} KWatts')
+    st.write(f'Reactive Power (Q): {Q:.2f} KVARs')
+    st.write(f'Apparent Power (S): {S:.2f} KVA')
 else:
     st.write('Please enter valid input values for voltage, current, and power factor.')
