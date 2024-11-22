@@ -10,7 +10,7 @@ def Elec_Power(V, I, PF):
     return P, Q, S
 
 # Streamlit UI
-st.title('Power Calculation Web App')
+st.title('2305A21L07-PS2')
 
 # Input fields for voltage, current, and power factor
 V = st.number_input('Enter Voltage (V) in Volts:', min_value=0.0, step=0.1)
